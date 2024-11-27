@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import jsonData from '../data/DATA.json';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({

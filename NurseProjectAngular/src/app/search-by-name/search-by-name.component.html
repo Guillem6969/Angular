@@ -1,7 +1,5 @@
-<p>search-by-name works!</p>
-
 @for (user of users; track $index) {
-   <p> {{user.first_name}} <p>
+   <p>{{user.first_name}} <p>
 }
 
 <form [formGroup]="searchName" (submit)="submitSearch()">
@@ -11,8 +9,10 @@
 </form>
 
 @if(searched){
-   <p> {{nameSearched}} </p>
+   <p>  FIRST NAME: {{nameSearched}} </p>
 } 
 @else {
     NO ENCONTRADO
 }
+
+
