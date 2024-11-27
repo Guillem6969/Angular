@@ -1,1 +1,18 @@
 <p>search-by-name works!</p>
+
+@for (user of users; track $index) {
+   <p> {{user.first_name}} <p>
+}
+
+<form [formGroup]="searchName" (submit)="submitSearch()">
+<label for="name"> NAME </label>
+<input type="text" formControlName = "name">
+<button type="submit"> CLICK ME</button>
+</form>
+
+@if(searched){
+   <p> {{nameSearched}} </p>
+} 
+@else {
+    NO ENCONTRADO
+}
